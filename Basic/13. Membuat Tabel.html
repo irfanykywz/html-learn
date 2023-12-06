@@ -1,0 +1,190 @@
+<p>
+  table berfungsi untuk menampilkan data agar data dapat dibaca dengan mudah, untuk membuat table dengan menggunakan tag <b>&lt;table&gt;&lt;/table&gt;</b>
+</p>
+
+<p>
+  penulisan kode :
+</p>
+<pre><code>&lt;table&gt;
+&lt;caption&gt;Toufu Farm&lt;/caption&gt;
+&lt;thead&gt;
+ &lt;tr&gt;
+  &lt;th&gt;Daftar Menu&lt;/th&gt;
+  &lt;th&gt;Harga&lt;/th&gt;
+ &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+ &lt;tr&gt;
+  &lt;td&gt;Strawbery&lt;/td&gt;
+  &lt;td&gt;$15&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;Tomat&lt;/td&gt;
+  &lt;td&gt;$15&lt;/td&gt;
+ &lt;/tr&gt;  
+ &lt;tr&gt;
+  &lt;td&gt;Nanas&lt;/td&gt;
+  &lt;td&gt;$15&lt;/td&gt;
+ &lt;/tr&gt;  
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+ &lt;tr&gt;
+  &lt;th colspan=&quot;2&quot;&gt;*Harga dapat berubah&lt;/th&gt;
+ &lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+
+<p>
+  pembahasan fungsi tag yang ada pada table
+</p>
+
+<p>
+<b>tag table</b><br/>
+mendefinisikan tabel
+</p>
+
+<p>
+<b>tag thead</b><br/>
+membuat grup tabel bagian kepala
+</p>
+
+<p>
+<b>tag tbody</b><br/>
+membuat grup tabel bagian badan
+</p>
+
+<p>
+<b>tag tfoot</b><br/>
+membuat grup tabel bagian kaki
+</p>
+
+<p>
+<b>tag th</b><br/>
+mendefinisikan kolom
+</p>
+
+<p>
+<b>tag tr</b><br/>
+mendefinisikan baris
+</p>
+
+<p>
+<b>tag td</b><br/>
+mendifinisikan kolom
+</p>
+
+<p>
+<b>tag caption</b><br/>
+memberi penjelasan pada tabel
+</p>
+
+<h2>atribut table</h2>
+<table> <caption>atribut tag table (tidak support html 5)</caption>
+ <tbody>
+  <tr>
+   <th>atribut</th>
+   <th>fungsi</th>
+   <th>nilai</th>
+  </tr>
+  <tr>
+   <td>align</td>
+   <td>rotasi text</td>
+   <td>left,center,right</td>
+  </tr>
+  <tr>
+   <td>bgcolor</td>
+   <td>menambahkan background color</td>
+   <td>rgb(),#kodewarna,namawarna</td>
+  </tr>   
+  <tr>
+   <td>border</td>
+   <td>memberi border</td>
+   <td>0, 1</td>
+  </tr>
+  <tr>
+   <td>cellpadding</td>
+   <td>memberi jarak dalam kolom</td>
+   <td>px</td>
+  </tr>
+  <tr>
+   <td>cellspacing</td>
+   <td>memberi jarak luar kolom</td>
+   <td>px</td>
+  </tr>
+  <tr>
+   <td>frame</td>
+   <td>memberi bingkai</td>
+   <td>void, above, below, hsides, lhs, rhs, vsides, box, border</td>
+  </tr>
+  <tr>
+   <td>rules</td>
+   <td>memberi garis</td>
+   <td>none, groups, rows, cols, all</td>
+  </tr>
+  <tr>
+   <td>sumamry</td>
+   <td>memberi tulisan pendek</td>
+   <td>text</td>
+  </tr>
+  <tr>
+   <td>width</td>
+   <td>ukuran table</td>
+   <td>px, %</td>
+  </tr>                
+ </tbody>
+</table>
+
+<h2>fungsi rowspan dan colspan pada tag th dan td</h2>
+
+<p>
+  fungsi dari rowspan adalah untuk menggabungkan kolom yang mengarah kebawah menjadi satu. sedangkan fungsi colspan untuk menggabungkan kolom yang mengarah kesamping menjadi satu.
+</p>
+
+<p>
+  contoh tabel dengan rowspan
+</p>
+
+<table> <tr>
+  <td>angka</td>
+  <td>huruf</td>
+  <td>lainnya</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>a</td>
+  <td rowspan="3">data</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>b</td>
+ </tr>
+  <tr>
+  <td>3</td>
+  <td>c</td>
+ </tr>   
+</table>
+
+<p>
+  contoh tabel dengan colspan
+</p>
+
+<table> <tr>
+  <td>angka</td>
+  <td>huruf</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>a</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>b</td>
+ </tr>
+  <tr>
+  <td>3</td>
+  <td>c</td>
+ </tr>
+ <tr>
+  <td colspan="2">data</td>
+ </tr>   
+</table>

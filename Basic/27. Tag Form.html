@@ -1,0 +1,56 @@
+<p>
+	tag baru untuk jenis form ada 2 yaitu <b>&lt;datalist&gt;&lt;/datalist&gt;</b> dan <b>&lt;output&gt;&lt;/output&gt;</b>
+</p>
+
+<h2>datalist</h2>
+
+<p>
+	tag datalist digunakan untuk membuat tag form input menjadi autocomplete, jadi seperti memberi sugesti data yang sudah ada
+</p>
+
+<p>
+	penulisan kode
+</p>
+<pre><code>&lt;form&gt;
+ &lt;input list=&quot;musim&quot; type=&quot;text&quot; name=&quot;musim&quot;&gt;
+ &lt;datalist id=&quot;musim&quot;&gt;
+  &lt;option&gt;Spring&lt;/option&gt;
+  &lt;option&gt;Summer&lt;/option&gt;
+  &lt;option&gt;Fall&lt;/option&gt;
+  &lt;option&gt;Winter&lt;/option&gt;
+ &lt;/datalist&gt;
+&lt;/form&gt;</code></pre>
+
+
+<p>
+	hasil dari kode diatas
+</p>
+<form><input list="musim" type="text" name="musim">
+<datalist id="musim">
+<option>Spring</option>
+<option>Summer</option>
+<option>Fall</option>
+<option>Winter</option>
+</datalist>
+</form>
+
+<h2>output</h2>
+
+<p>
+	tag output digunakan untuk menampilkan hasil dari sebuah inputan yang berjenis perhitungan. tag output ini bekerja menggunakan javascript jadi harus ada kode javascriptnya.
+</p>
+
+<p>
+	contoh penulisan kode
+</p>
+<pre><code>&lt;form oninput=&quot;hasil.value=parseInt(var1.value)+parseInt(var2.value)&quot;&gt;
+ &lt;input type=&quot;number&quot; name=&quot;var1&quot;/ value=&quot;&quot;&gt;+
+ &lt;input type=&quot;number&quot; name=&quot;var2&quot; value=&quot;1&quot; /&gt;=
+ &lt;output name =&apos;hasil&apos; for =&apos;var1 var2&apos;&gt;&lt;/output&gt;
+&lt;/form&gt;</code></pre>
+
+<p>
+	hasil dari kode diatas
+</p>
+<form oninput="hasil.value=parseInt(var1.value)+parseInt(var2.value)"><input type="number" name="var1"/ value="">+<input type="number" name="var2" value="1" />=<output name ='hasil' for ='var1 var2'></output>
+</form>

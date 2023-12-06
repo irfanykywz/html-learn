@@ -1,0 +1,236 @@
+<p>
+form digunakan untuk melakukan proses terhadap data 
+</p>
+
+<p>
+fungsi form dalam halaman website berperan penting misalnya form pencarian digunakan untuk mencari data atau bisa juga form registrasi digunakan untuk pendaftaran.
+</p>
+
+<h2>Diawali dengan tag form</h2>
+
+<p>
+untuk membuat form maka anda harus menuliskan tag html seperti dibawah ini :
+</p>
+<pre><code>&lt;form&gt;
+&lt;/form&gt;</code></pre>
+
+<p>
+kode form diatas bertujuan untuk mengidentifikasi kalau ada sebuah form pada halaman tersebut, setelah itu anda harus mengisikan atribut untuk tag form tersebut mau diproses kemana dan memakai method apa ?
+</p>
+
+<h2>memahami atribut utama form</h2>
+<p>
+oke mari kita bahas satu persatu atribut yang ada pada form
+</p>
+
+<h3>atribut <b>action</b></h3>
+<p>
+atribut action digunakan menentukan alamat yang akan dituju untuk melakukan pengiriman data, data yang dikirim kealamat tersebut nantinya akan diproses.
+</p>
+
+<p>
+contoh penulisan atribut action :
+</p>
+<pre><code>&lt;form action="https://kodeinhtml.blogspot.com/login"&gt;
+&lt;/form&gt;</code></pre>
+
+<p>
+dari kode diatas saya memberikan nilai pada atribut action ke alamat https://kodeinhtml.blogspot.com/login. maka data yang ada pada form tersebut akan dikirim kelamat https://kodeinhtml.blogspot.com/login untuk diproses
+</p>
+
+<h3>atribut <b>method</b></h3>
+<p>
+atribut method ini berfungsi sebagai jenis pengiriman data yang dilakukan, ada 2 jenis nilai yang bisa digunakan pada atribut method ini yaitu GET dan POST. method GET mengirim data melalui url sedangkan method POST mengirim data tanpa melalui url.
+</p>
+
+<p>
+dari kedua jenis method diatas memiliki kelebihan dan kekurangannya masing masing. saya tidak akan membahasnya ditulisan ini yang penting adalah fungsinya yaitu memilih jenis pengiriman data dari sebuah form.
+</p>
+
+<p>
+contoh penulisan method GET
+</p>
+<pre><code>&lt;form method="GET"&gt;
+&lt;/form&gt;</code></pre>
+
+<p>
+contoh penulisan method POST
+</p>
+<pre><code>&lt;form method="POST"&gt;
+&lt;/form&gt;</code></pre>
+
+<p>
+selesai sudah membahas atribut yang ada pada tag form, maka sekarang dilanjut dengan mengetahui jenis inputan yang bisa digunakan.
+</p>
+
+<h2>Jenis Form yang bisa digunakan</h2>
+
+<p>
+tag html yang digunakan untuk membuat form ada berbagai macam, diantaranya :
+</p>
+
+<ul>
+<li>input</li>
+<li>select</li>
+<li>textarea</li>
+</ul>
+
+<h2>atribut yang harus ada pada setiap jenis form</h2>
+
+<p>
+sebelum menjelaskan lebih rinci dari 3 jenis form diatas saya akan bahas atribut yang harus ada pada setiap jenis form yaitu atribut <b>name</b>. 
+</p>
+
+<p>
+atribut name ini berfungsi untuk menangkap data pada form nantinya. <b>jadi pastikan disetiap jenis form yang dibuat harus ada atribut name ini agar datanya bisa diproses.</b>
+</p>
+
+<h2>form <b>input</b></h2>
+
+<p>
+form jenis ini adalah form yang sering digunakan karena memiliki banyak type. lihat table dibawah ini untuk tipe dan fungsinya :
+</p>
+
+<table><thead>
+<tr>    <th>Type</th>    <th>Fungsi</th>   </tr>
+</thead>  <tbody>
+<tr>    <td>text</td>    <td>memasukan semua jenis text</td>   </tr>
+<tr>    <td>password</td>    <td>memasukan text yang hasilnya disensor</td>   </tr>
+<tr>    <td>radio</td>    <td>membuat inputan dengan jenis pilihan</td>   </tr>
+<tr>    <td>checkbox</td>    <td>membuat inputan dengan jenis ceklis</td>   </tr>
+<tr>    <td>file</td>    <td>membuat inputan berbentuk file</td>   </tr>
+<tr>    <td>submit</td>    <td>membuat input menjadi tombol submit</td>   </tr>
+<tr>    <td>reset</td>    <td>membuat inputan menjadi tombol reset</td>   </tr>
+<tr>    <td>button</td>    <td>membuat inputan menjadi tombol saja</td>   </tr>
+</tbody> </table>
+
+<p>
+contoh input type text
+</p>
+<pre><code>&lt;input type="text" name="text"&gt;</code></pre>
+
+<p>
+hasil dari kode diatas
+</p>
+
+<input name="text" type="text" />
+
+<h2>form <b>select</b></h2>
+
+<p>
+jenis form select ini digunakan untuk memilih data yang sudah ada dengan tampilan daftar, untuk penulisannya adalah sebagai berikut :
+</p>
+<pre><code>&lt;select name="perusahaan"&gt;
+&lt;optgroup label="luar negri"&gt;
+&lt;option&gt;microsoft&lt;/option&gt;
+&lt;option&gt;apple&lt;/option&gt;
+&lt;option&gt;facebook&lt;/option&gt;
+&lt;option&gt;google&lt;/option&gt; 
+&lt;/optgroup&gt;
+&lt;optgroup label="dalam negri"&gt;
+&lt;option&gt;tokopedia&lt;/option&gt;
+&lt;option&gt;gojek&lt;/option&gt;
+&lt;option&gt;bukalapak&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+
+<p>
+dari kode diatas ada 3 jenis tag html yang digunakan yaitu select,optgroup, dan option.
+</p>
+
+<p>
+<b>tag select</b>
+berfungsi sebagai identifikasi 
+</p>
+
+<p>
+<b>tag optgroup</b>
+berfungsi untuk melakukan grup terhadap data yang ada
+</p>
+
+<p>
+<b>tag option</b>
+berfungsi untuk menaruh daftar data yang akan dimasukan
+</p>
+
+<p>
+hasil dari kode diatas
+</p>
+
+<select name="perusahaan">
+<optgroup label="luar negri">
+<option>microsoft</option>
+<option>apple</option>
+<option>facebook</option>
+<option>google</option>
+</optgroup>
+<optgroup label="dalam negri">
+<option>tokopedia</option>
+<option>gojek</option>
+<option>bukalapak</option>
+</optgroup>
+</select>
+
+<h2>form <b>textarea</b></h2>
+<p>
+jenis form ini biasanya digunakan untuk memasukan karakter yang panjang. tampilan dari jenis form ini adalah bentuknya lebih besar dari form input jenis biasa dan form jenis textarea ini bisa menulis text kebawah.
+</p>
+
+<p>
+untuk kode penulisannya adalah seperti ini :
+</p>
+<pre><code>&lt;textarea name="artikel" cols="20" rows="5"&gt;&lt;/textarea&gt;</code></pre>
+
+<p>
+dari kode diatas saya memberikan atribut cols dan rows.
+</p>
+
+<p>
+<b>atribut cols</b>
+berfungsi untuk mengatur jarak kesamping
+</p>
+
+<p>
+<b>atribut rows</b>
+berfungsi untuk mengatur jarak kebawah
+</p>
+
+<p>
+hasil dari kode diatas
+</p>
+<textarea cols="20" name="artikel" rows="5"></textarea>
+
+<h2>cara membuat grup pada form</h2>
+
+<p>
+dengan menggunakan tag <b>&lt;fieldset&gt;&lt;/fieldset&gt;</b> dan <b>&lt;legend&gt;&lt;/legend&gt;</b> anda dapat membuat grup terhadap form yang ada, contoh kode penulisan form yang digrup.
+</p>
+
+<pre><code>&lt;form&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Formulir data diri :&lt;/legend&gt;
+&lt;label&gt;nama lengkap :&lt;/label&gt;&lt;br/&gt;
+&lt;input type="text" name="nama"&gt;&lt;br/&gt;
+&lt;label&gt;nama panggilan :&lt;/label&gt;&lt;br/&gt;
+&lt;input type="text" name="nama"&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;input type="submit" name="kirim"&gt;  
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+
+<p>
+hasil dari kode diatas
+</p>
+
+<form>
+<fieldset>
+<legend>Formulir data diri :</legend>
+<label>nama lengkap :</label><br/>
+<input type="text" name="nama"><br/>
+<label>nama panggilan :</label><br/>
+<input type="text" name="nama">
+<br/><br/>
+<input type="submit" name="kirim">  
+</fieldset>
+</form>

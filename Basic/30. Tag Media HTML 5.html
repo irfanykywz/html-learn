@@ -1,0 +1,78 @@
+<h2>audio</h2>
+
+<p>
+	tag audio ini digunakan untuk memutar suara didalam halaman web
+</p>
+
+<p>
+	penulisan kode
+</p>
+
+<pre><code>&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/html/horse.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+  &lt;source src=&quot;https://www.w3schools.com/html/horse.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</code></pre>
+
+<p>
+	hasil dari kode diatas
+</p>
+<audio controls="">
+<source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+</audio>
+
+<h3>atribut tag audio</h3><table><tr>   <th>atribut</th>   <th>fungsi</th>   <th>nilai</th>  </tr>
+<tr>   <td>autoplay</td>   <td>memulai audio otomatis</td>   <td>autoplay</td>  </tr>
+<tr>   <td>controls</td>   <td>memunculkan tombol kontrol</td>   <td>controls</td>  </tr>
+<tr>   <td>loop</td>   <td>memutar ulang suara</td>   <td>loop</td>  </tr>
+<tr>   <td>muted</td>   <td>meredamkan suara</td>   <td>muted</td>  </tr>
+<tr>   <td>preload</td>   <td>menentukan audo akan diload dengan cara</td>   <td>auto,metadata,none</td>  </tr>
+<tr>   <td>src</td>   <td>file sumber untuk audio</td>   <td>url</td>  </tr>
+</table>
+<h2>embed</h2>
+
+<p>
+	tag embed digunakan untuk aplikasi external, ataupun plugin
+</p>
+
+<h2>source</h2>
+
+<p>
+	tag source digunakan untuk menentukan sumber file untuk tag media (picture,video,audio)
+</p>
+
+<h2>track</h2>
+
+<p>
+	tag track digunakan untuk membuat daftar track pada tag media (video,audi)
+</p>
+
+<h2>video</h2>
+<p>
+	tag video digunakan untuk menampilkan media berbentuk video
+</p>
+
+<h3>atribut tag video</h3><table><tr>   <th>atribut</th>   <th>fungsi</th>   <th>nilai</th>  </tr>
+<tr>   <td>autoplay</td>   <td>memulai audio otomatis</td>   <td>autoplay</td>  </tr>
+<tr>   <td>controls</td>   <td>memunculkan tombol kontrol</td>   <td>controls</td>  </tr>
+<tr>   <td>loop</td>   <td>memutar ulang suara</td>   <td>loop</td>  </tr>
+<tr>   <td>muted</td>   <td>meredamkan suara</td>   <td>muted</td>  </tr>
+<tr>   <td>preload</td>   <td>menentukan audo akan diload dengan cara</td>   <td>auto,metadata,none</td>  </tr>
+<tr>   <td>src</td>   <td>file sumber untuk audio</td>   <td>url</td>  </tr>
+<tr>   <td>width dan height</td>   <td>menentukan ukuran gambar</td>   <td>px, %</td>  </tr>
+<tr>   <td>poster</td>   <td>gambar sebelum video diputar</td>   <td>url</td>  </tr>
+</table>
+<h2>picture</h2>
+
+<p>
+	tag picture digunakan untuk membuat gambar yang ditampilkan lebih feksibel untuk menentukan gambar yang akan ditampilkan, tag picture bisa membuat gambar tampil berbeda disetiap layar yang ukurannya berbeda.
+</p>
+
+<p>
+	penulisan kode
+</p>
+<pre><code>&lt;picture&gt;
+ &lt;source media=&quot;(min-width: 860px)&quot; srcset=&quot;gambar_ukuran_860.jpg&quot;/&gt;
+ &lt;source media=&quot;(min-width: 460px)&quot; srcset=&quot;gambar_ukuran_460.jpg&quot;/&gt; 
+ &lt;img src=&quot;gambar_ukuran_width_dibawah_460.jpg&quot;/ alt=&apos;gambar&apos;&gt;
+&lt;/picture&gt;</code></pre>
