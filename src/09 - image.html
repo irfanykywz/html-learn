@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn html - image</title>
+</head>
+<body>
+
+	<!-- 
+	untuk memunculkan gambar bisa menggunakan tag img
+	dan mengisi atribut src dengan source / sumber gambarnya
+
+	terdapat beberapa cara untuk menentukan sourcenya diantaranya
+
+	internal-source (local) = gambar diambil dari nama file local
+	external-source (hotlink) = gambar diambil menggunakan url
+	-->
+
+	<!-- contoh internal source -->
+	<img src="09 - image.png">
+
+	<!-- contoh external source -->
+	<img src="https://drive.alkademi.id/v1/upload/settings/alkademi/1705398917132.png">
+
+
+	<!-- 
+	attribute
+
+	alt = menambahkan alternatif text, jika gambar tidak terload maka text ini akan muncul
+	title = menambahkan text ketika mouse fokus pada gambar
+	widht = mengatur besar horizontal
+	height = mengatur besar vertical
+ 	-->
+
+ 	<!-- contoh penggunakan alt dan title -->
+ 	<img src="wrong source" alt='little girl' title='little girl'>
+
+
+ 	<!-- contoh penggunakan width dan height -->
+ 	<img src="09 - image.png" width="50"> <!-- memaksa gambar hanya pada besaran horizontal saja -->
+ 	<img src="09 - image.png" width="50" height="50"> <!-- memaksa gambar menjadi ukuran tersebut --> 	
+
+</body>
+</html>

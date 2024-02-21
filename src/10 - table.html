@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn html - table</title>
+</head>
+<body>
+
+	<!-- 
+	atribut untuk table 
+	
+	border
+	cellspacing = jarak antara kolom satu dengan lainnya
+	cellpadding = jarak text dengan garis kolom
+	-->
+
+	<!-- 
+	attribute untuk th & td
+
+	colspan = untuk melangkali kolom (col)
+	rowspan = untuk melangkahi baris (row)
+	-->
+
+	<table border="1" cellpadding="4" cellspacing="10"> 
+		<thead>
+			<tr>
+				<th></th>
+				<th>heading col 1</th>
+				<th>heading col 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>row 1</th>
+				<td>col 1</td>
+				<td>col 2</td>
+			</tr>
+			<tr>
+				<th>row 2</th>
+				<td>col 1</td>
+				<td>col 2</td>
+			</tr>	
+
+			<tr>
+				<th rowspan="2">
+					row 3 & 4
+				</th>
+				<td colspan="2">
+					awwe
+				</td>
+			</tr>		
+			<tr>
+				<td colspan="2">
+					awwe
+				</td>					
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn html - form</title>
+</head>
+<body>
+
+	<!-- 
+	form digunakan untuk membuat sebuah inputan untuk sebuah data, 
+	terdapat banyak sekali jenis input yang bisa digunakan diantaranya
+	- input
+		- text
+		- password
+		- number
+		- radio
+		- checkbox
+		- submit
+	- select option
+	- textarea 
+	- label
+	- button
+	 -->
+
+	<p>
+		<strong>
+			form registrasi
+		</strong>
+	</p>
+
+	<form>
+
+		<div>
+			<label>
+				username
+			</label>	
+			<input type="text" name="username">		
+		</div>
+
+		<div>
+			<label>
+				password
+			</label>	
+			<input type="password" name="password">		
+		</div>	
+
+		<div>
+			<label>
+				no hp
+			</label>	
+			<input type="number" name="no_hp">		
+		</div>		
+
+		<div>
+			<label>
+				golongan
+			</label>
+			<label>
+				<input type="radio" name="golongan" value="kaya"> kaya
+			</label>
+			<label>
+				<input type="radio" name="golongan" value="miskin"> miskin
+			</label>			
+		</div>
+
+		<div>
+			<label>
+				sumber penghasilan
+			</label>
+			<label>
+				<input type="checkbox" name="penghasilan" value="kaya"> jualan
+			</label>
+			<label>
+				<input type="checkbox" name="penghasilan" value="miskin"> bisnis
+			</label>			
+		</div>
+
+		<div>
+			<label>
+				biodata
+			</label>
+			<textarea name="biodata"></textarea>
+		</div>
+
+		<div>
+			<label>
+				musim
+			</label>
+			<select name="musim">
+				<option value="semi">semi</option>
+				<option value="panas">panas</option>
+				<option value="gugur">gugur</option>
+				<option value="dingin">dingin</option>
+			</select>
+		</div>
+
+		<div>
+			<input type="submit" name="daftar">
+			<button type="reset">reset</button>
+		</div>
+		
+	</form>
+
+</body>
+</html>
