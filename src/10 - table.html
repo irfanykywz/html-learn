@@ -5,6 +5,30 @@
 </head>
 <body>
 
+	<!-- tag yang ada pada table
+	
+	table = mendefinisikan tabel
+	thead = membuat grup tabel bagian kepala
+	tbody = membuat grup tabel bagian badan
+	tfooter = membuat grup tabel bagian kaki
+	tr = mendefinisikan baris
+	th = mendefinisikan baris dalam huruf tebal
+	td = mendefinisikan kolom
+	caption = memberi penjelasan pada tabel
+	 -->
+
+	<!-- attribute yang bisa digunakan ditable
+	align = rotasi text
+	bgcolor = menambahkan background
+	border = memberi garis tepi
+	cellpadding = memberi jarak dalam kolom
+	cellspacing = memberi jarak antar kolom
+	frame = memberi bingkai
+	rules = memberi garis
+	sumamry = memberi tulisan pendek
+	width = ukuran table
+	-->
+
 	<!-- 
 	atribut untuk table 
 	
@@ -18,9 +42,12 @@
 
 	colspan = untuk melangkali kolom (col)
 	rowspan = untuk melangkahi baris (row)
+
+	fungsi dari rowspan adalah untuk menggabungkan kolom yang mengarah kebawah menjadi satu. sedangkan fungsi colspan untuk menggabungkan kolom yang mengarah kesamping menjadi satu.
 	-->
 
-	<table border="1" cellpadding="4" cellspacing="10"> 
+	<table border="1" cellpadding="4" cellspacing="10" summary="heheheheh"> 
+		<caption>hello table</caption>
 		<thead>
 			<tr>
 				<th></th>
@@ -54,6 +81,13 @@
 				</td>					
 			</tr>
 		</tbody>
+		<tfoot>
+			<tr>
+				<th></th>
+				<th>footer col 1</th>
+				<th>footer col 2</th>
+			</tr>
+		</tfoot>
 	</table>
 
 </body>

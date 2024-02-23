@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn html - semantic</title>
+</head>
+<body>
+
+
+<!-- 
+tag semantic adalah tag yang lebih mudah dibaca oleh manusia
+tag ini hadir dihtml 5 dan bisa digunakan sebagai pengganti div
+
+berikut daftar tag semantic
+
+main = sebagai pembungkus elemen utama
+section = membuat penjelasan konten secara singkat
+article = untuk artikel
+header = untuk bagian header
+footer = untuk bagian footer 
+nav = untuk navigasi
+aside = untuk bagian sidebar
+figure, figcaption = untuk membuat caption pada gambar
+details, summary = untuk membuat show hide konten
+mark  = untuk membuat tanda
+time = untuk menuliskan waktu
+-->
+
+<!-- contoh penggunaan -->
+<main>
+	<header>
+		<h1>Waktu yang terus berjalan, kamu yang hanya terdiam...</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="/">beranda</a></li>
+			<li><a href="/about">about</a></li>
+		</ul>
+	</nav>
+
+	<section>
+		<article>
+			<h2>Seorang pemuda berhasil membuat pesawat mini</h2>
+			<p>seorang pemuda yang berasal dari negara teyki berhasil membuat pesawat mini yang bisa membawa 1 penumpang</p>
+
+			<figure>
+				<img src="winter.png" alt="winter" />
+				<figcaption>winter remember 2019</figcaption>
+			</figure>
+
+			<details>
+				<summary>ada konten didalam sini</summary>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</details>
+
+			<p>hallo <mark>text ini ditandai</mark></p>
+
+			<time datetime="2020-01-26">Year 2020</time>
+
+		</article>
+	</section>
+
+	<aside>
+		<h3>About me</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+	</aside>
+
+	<footer>
+		<p>&copy;2020 mywebsite</p>
+		<p>Contact me : irfanykywz</p>
+	</footer>
+</main>
+
+</body>
+</html>

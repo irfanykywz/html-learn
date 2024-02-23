@@ -5,100 +5,248 @@
 </head>
 <body>
 
-	<!-- 
-	form digunakan untuk membuat sebuah inputan untuk sebuah data, 
-	terdapat banyak sekali jenis input yang bisa digunakan diantaranya
-	- input
-		- text
-		- password
-		- number
-		- radio
-		- checkbox
-		- submit
-	- select option
-	- textarea 
-	- label
-	- button
-	 -->
+<!-- 
+form digunakan untuk membuat sebuah inputan sebuah data untuk diolah, 
+terdapat banyak sekali jenis input yang bisa digunakan diantaranya
+- input
+- select option
+- textarea 
+- label
+- button
+-->
 
-	<p>
-		<strong>
-			form registrasi
-		</strong>
-	</p>
+<!--  
+form attribute
+action = alamat tujuan data form dikirim
+enctype = menentukan format data yang akan dikirim
+method = metode http yang digunakan saat pengiriman data
+-->
 
-	<form>
+<!-- contoh form sederhana -->
+<form action="" method="POST" enctype="multipart/form-data">
 
-		<div>
-			<label>
-				username
-			</label>	
-			<input type="text" name="username">		
-		</div>
+	<div>
+		<label>
+			username
+		</label>	
+		<input type="text" name="username">		
+	</div>
 
-		<div>
-			<label>
-				password
-			</label>	
-			<input type="password" name="password">		
-		</div>	
+	<div>
+		<label>
+			password
+		</label>	
+		<input type="password" name="password">		
+	</div>	
 
-		<div>
-			<label>
-				no hp
-			</label>	
-			<input type="number" name="no_hp">		
-		</div>		
+	<div>
+		<label>
+			no hp
+		</label>	
+		<input type="number" name="no_hp">		
+	</div>		
 
-		<div>
-			<label>
-				golongan
-			</label>
-			<label>
-				<input type="radio" name="golongan" value="kaya"> kaya
-			</label>
-			<label>
-				<input type="radio" name="golongan" value="miskin"> miskin
-			</label>			
-		</div>
+	<div>
+		<label>
+			golongan
+		</label>
+		<label>
+			<input type="radio" name="golongan" value="kaya"> kaya
+		</label>
+		<label>
+			<input type="radio" name="golongan" value="miskin"> miskin
+		</label>			
+	</div>
 
-		<div>
-			<label>
-				sumber penghasilan
-			</label>
-			<label>
-				<input type="checkbox" name="penghasilan" value="kaya"> jualan
-			</label>
-			<label>
-				<input type="checkbox" name="penghasilan" value="miskin"> bisnis
-			</label>			
-		</div>
+	<div>
+		<label>
+			sumber penghasilan
+		</label>
+		<label>
+			<input type="checkbox" name="penghasilan" value="kaya"> jualan
+		</label>
+		<label>
+			<input type="checkbox" name="penghasilan" value="miskin"> bisnis
+		</label>			
+	</div>
 
-		<div>
-			<label>
-				biodata
-			</label>
-			<textarea name="biodata"></textarea>
-		</div>
+	<div>
+		<label>
+			biodata
+		</label>
+		<textarea name="biodata"></textarea>
+	</div>
 
-		<div>
-			<label>
-				musim
-			</label>
-			<select name="musim">
-				<option value="semi">semi</option>
-				<option value="panas">panas</option>
-				<option value="gugur">gugur</option>
-				<option value="dingin">dingin</option>
-			</select>
-		</div>
+	<div>
+		<label>
+			musim
+		</label>
+		<select name="musim">
+			<option value="semi">semi</option>
+			<option value="panas">panas</option>
+			<option value="gugur">gugur</option>
+			<option value="dingin">dingin</option>
+		</select>
+	</div>
 
-		<div>
-			<input type="submit" name="daftar">
-			<button type="reset">reset</button>
-		</div>
-		
-	</form>
+	<div>
+		<input type="submit" name="daftar">
+		<button type="reset">reset</button>
+	</div>
+
+	<br><br><br>
+
+</form>
+
+<!--  
+MEMPELAJARI FORM LEBIH DALAM LAGI
+# ============================-->
+
+<!-- 
+beberapa atribut yang bisa digunakan untuk tag input
+terdapat penambahan atribut baru dihtml 5 dan sangat berguna
+
+# input atribut
+value = mengisi nilai default input
+readonly = membatasi fungsi input menjadi hanya dibaca saja
+disabled = menonaktifkan input
+minlength = minimum kakrater
+maxlength = batas karakter
+
+# input atribut yang hadir dihtml 5
+required = inputan wajib di isi (validasi form)
+placeholder = memberikan kata petunjuk input
+autocomplete = membuat form inputan memiliki sugesti
+autofocus = automatis fokus ke form inputan yang memiliki atribut ini
+multiple = untuk input type file, email. membuat bisa memaskan lebih dari 1 
+min and max = membatasi minimal dan maksimal inputan
+pattern = melakukan validasi menggunakan bahasa regex (ketika atribut required digunakan)
+-->
+<div>
+	<label>input attribute</label>
+	<input type="text" value="disabled" disabled>
+	<input type="text" value="read only" readonly>
+	<input type="text" maxlength="5" minlength="3">
+	<input type="text" value="hello">
+	<input type="text" placeholder="masukan tulisan disini">
+</div>
+
+<!-- 
+berikut type inputan yang bisa digunakan
+
+# input type 
+text
+number
+password
+email
+file
+radio
+checkbox
+submit
+button
+reset
+
+# input type html 5
+color
+date
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+-->
+<div>
+	<label>input type</label>
+	<input type="text" placeholder="text">
+	<input type="number" placeholder="number">
+	<input type="password" placeholder="password">
+	<input type="email" placeholder="email">
+	<input type="file">
+	<input type="submit" value="submit">
+	<input type="button" value="button">
+	<input type="reset">
+	<!-- html 5 -->
+	<input type="color">
+	<input type="date">
+	<input type="datetime-local">
+	<input type="email">
+	<input type="month">
+	<input type="number">
+	<input type="range">
+	<input type="search">
+	<input type="tel">
+	<input type="time">
+	<input type="url">
+	<input type="week">
+</div>
+
+<br><br><br>
+
+<!-- select option group -->
+<select name="perusahaan">
+	<optgroup label="luar negri">
+		<option>microsoft</option>
+		<option>apple</option>
+		<option>facebook</option>
+		<option>google</option> 
+	</optgroup>
+	<optgroup label="dalam negri">
+		<option>tokopedia</option>
+		<option>gojek</option>
+		<option>bukalapak</option>
+	</optgroup>
+</select>
+
+<br><br><br>
+
+<!-- grouping form -->
+<form>
+	<fieldset>
+		<legend>Formulir data diri :</legend>
+		<label>nama lengkap :</label><br/>
+		<input type="text" name="nama"><br/>
+		<label>nama panggilan :</label><br/>
+		<input type="text" name="nama">
+		<br/><br/>
+		<input type="submit" name="kirim">  
+	</fieldset>
+</form>
+
+<br><br><br>
+
+
+<!-- 
+tedapat tag input baru dihtml 5 yaitu <datalist> dan <output>
+
+tag datalist digunakan untuk membuat tag form input menjadi autocomplete, jadi seperti memberi sugesti data yang sudah ada
+
+tag output digunakan untuk menampilkan hasil dari sebuah inputan yang berjenis perhitungan. tag output ini bekerja menggunakan javascript jadi harus ada kode javascriptnya.
+-->
+
+<!-- contoh penggunaan datalist -->
+<input list="musim" type="text" name="musim">
+<datalist id="musim">
+	<option>Spring</option>
+	<option>Summer</option>
+	<option>Fall</option>
+	<option>Winter</option>
+</datalist>
+
+
+<br><br><br>
+
+<!-- contoh penggunaan output -->
+<form oninput="hasil.value=parseInt(var1.value)+parseInt(var2.value)">
+ <input type="number" name="var1"/ value="">+
+ <input type="number" name="var2" value="1" />=
+ <output name ='hasil' for ='var1 var2'></output>
+</form>
 
 </body>
 </html>

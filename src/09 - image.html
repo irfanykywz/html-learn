@@ -23,12 +23,14 @@
 
 
 	<!-- 
-	attribute
-
+	attribute yang bisa digunakan tag img
+	src = alamat sumber gambar
 	alt = menambahkan alternatif text, jika gambar tidak terload maka text ini akan muncul
 	title = menambahkan text ketika mouse fokus pada gambar
 	widht = mengatur besar horizontal
 	height = mengatur besar vertical
+	crossorigin = mengijinkan gambar diakses oleh situs lain
+	srcset = kumpulan url gambar dalam ukuran tertentu dan kondisi tertentu	url
  	-->
 
  	<!-- contoh penggunakan alt dan title -->
@@ -38,6 +40,24 @@
  	<!-- contoh penggunakan width dan height -->
  	<img src="09 - image.png" width="50"> <!-- memaksa gambar hanya pada besaran horizontal saja -->
  	<img src="09 - image.png" width="50" height="50"> <!-- memaksa gambar menjadi ukuran tersebut --> 	
+
+
+ 	<br><br><br>
+
+ 	<hr>
+
+ 	<!--  
+	tag picture membuat ukuran gambar yang ditampilkan lebih feksibel disetiap ukuran layar dengan menambahkan tag source didalamnya
+
+	mirip seperti penggunaan atribut srcset pada tag img namun ini lebih leluasa untuk mengontrolnya...
+ 	-->
+
+	<picture>
+		<source media="(min-width: 860px)" srcset="gambar_ukuran_860.jpg"/>
+		<source media="(min-width: 460px)" srcset="gambar_ukuran_460.jpg"/> 
+		<img src="gambar_ukuran_width_dibawah_460.jpg"/ alt='gambar'>
+	</picture>
+
 
 </body>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn html - audio & video</title>
+</head>
+<body>
+
+
+<!-- 
+untuk memasukan media seperti audio bisa menggunakan tag <audio>
+dan untuk video bisa menggunakan tag <video>
+
+# atribut untuk audio
+autoplay = memulai audio otomatis
+controls = memunculkan tombol kontrol
+loop = memutar ulang suara
+muted = meredamkan suara
+preload = menentukan audo akan diload dengan cara	auto
+src = sumber audio bisa berbentuk path file maupun url
+
+# atribut untuk video
+autoplay = memulai audio otomatis | autoplay
+controls = memunculkan tombol kontrol | controls
+loop = memutar ulang suara | loop
+muted = meredamkan suara | muted
+preload = menentukan audo akan diload dengan cara | auto,metadata,none
+src = file sumber untuk audio | url
+width, height = menentukan ukuran gambar | px, %
+poster = gambar sebelum video diputar | url
+
+
+-->
+
+<!-- contoh penggunaan tag audio -->
+<div>
+	<audio controls loop src="https://www.w3schools.com/html/horse.mp3">
+		Your browser does not support the audio tag.
+	</audio>
+</div>
+
+
+<!-- contoh penggunaan tag video -->
+<div>	
+	<video controls src="https://www.w3schools.com/html/mov_bbb.mp4">
+		Your browser does not support the video tag.
+	</video>
+</div>
+
+<!-- 
+selain menambahkan media langsung kedalam tag, bisa juga menambahkannya menggunakan tag source 
+
+ini memungkinkan browser memilih media mana yang bisa diputar
+
+contoh penggunaan pada audio
+
+<audio controls>
+  	<source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+  	<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+	Your browser does not support the audio tag.
+</audio>
+
+
+contoh pada video
+<video width="320" height="240" autoplay>
+	<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  	<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+</video>
+-->
+
+</body>
+</html>
